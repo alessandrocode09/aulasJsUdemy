@@ -6,11 +6,11 @@ valores[4] = 10
 console.log(valores)
 console.log(valores.length)
 
-valores.push({id: 3}, false, null, 'teste')
+valores.push({id: 3}, false, null, 'teste','joaozinho',20.8275665543312)
 console.log(valores)
 
 console.log(valores.pop())
-delete valores[0]
+delete valores[5]
 console.log(valores)
 
 console.log(typeof valores)

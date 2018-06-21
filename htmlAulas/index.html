@@ -39,8 +39,11 @@
                 link.onclick = function(e) {
                     e.preventDefault()
                     fetch(link.getAttribute('wm-nav'))
-                        .then(resp => resp.text())
-                        .then(html => conteudo.innerHTML = html)
+                        .then((resp) => resp.text())
+                        .then(function(html){
+                            conteudo.innerHTML = html;
+                            nodeScriptReplace(conteudo);
+                        });
                 }
             })
         </script>
